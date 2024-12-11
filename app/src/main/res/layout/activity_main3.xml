@@ -36,6 +36,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:paddingTop="20dp"
         android:text="Hey "
         android:textSize="40dp"
@@ -49,6 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
         android:text="name"
         android:id="@+id/textview6"
         android:textStyle="bold"
@@ -60,7 +62,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="140dp"
         android:text="Order list :"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -70,10 +72,20 @@
         android:id="@+id/makhni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dal Makhni - Rs. 120 "
+        android:text="Dal Makhni "
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text="- Rs. 120"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/makhni"
         app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <CheckBox
@@ -85,36 +97,73 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@id/makhni" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text=" - Rs. 8"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/chapati"
+        app:layout_constraintTop_toBottomOf="@id/makhni" />
 
     <CheckBox
         android:id="@+id/paneer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paneer gravy - Rs.180"
+        android:text="Paneer gravy "
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/chapati" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="- Rs. 180"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/paneer"
         app:layout_constraintTop_toBottomOf="@id/chapati" />
 
     <CheckBox
         android:id="@+id/rice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rice - Rs.90"
+        android:text="Rice "
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/paneer" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:text="- Rs. 90"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/rice"
+        app:layout_constraintTop_toBottomOf="@id/paneer" />
 
     <CheckBox
         android:id="@+id/sabzi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mix Veg - Rs.100"
+        android:text="Mix Veg"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/rice" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:text="- Rs. 100"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/sabzi"
+        app:layout_constraintTop_toBottomOf="@id/rice" />
+
 
     <TextView
         android:id="@+id/textView3"
@@ -129,29 +178,57 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cold drink - On MRP"
+        android:text="Cold drink "
         android:textSize="15dp"
-        android:id="@+id/checkbox1"
+        android:id="@+id/drink"
         app:layout_constraintTop_toBottomOf="@id/textView3"
         app:layout_constraintStart_toStartOf="@id/guideline"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text="- on MRP"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/drink"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Raita - Rs.50"
+        android:text="Raita"
         android:textSize="15dp"
-        android:id="@+id/checkbox2"
-        app:layout_constraintTop_toBottomOf="@id/checkbox1"
+        android:id="@+id/raita"
+        app:layout_constraintTop_toBottomOf="@id/drink"
         app:layout_constraintStart_toStartOf="@id/guideline"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:text="- Rs. 50"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/raita"
+        app:layout_constraintTop_toBottomOf="@id/drink" />
+
     <CheckBox
-        android:id="@+id/checkbox3"
+        android:id="@+id/papad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Papad - Rs.6"
+        android:text="Papad"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/checkbox2" />
+        app:layout_constraintTop_toBottomOf="@id/raita" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:text="- Rs. 6"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/papad"
+        app:layout_constraintTop_toBottomOf="@id/raita" />
 
     <Button
         android:id="@+id/btn1"
@@ -161,7 +238,13 @@
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/black"
         android:text="Place Order"
-        app:layout_constraintBottom_toBottomOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/papad"
         app:layout_constraintStart_toStartOf="@id/guideline" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
