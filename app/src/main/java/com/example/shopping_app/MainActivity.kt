@@ -14,16 +14,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         val button = findViewById<Button>(R.id.button)
-        val textview5 = findViewById<TextView>(R.id.textview5)
         val name:EditText = findViewById(R.id.name)
 
         button.setOnClickListener {
             startActivity(Intent(this,MainActivity3::class.java).putExtra("name",name.text.toString()))
             finish()
-        }
-        textview5.setOnClickListener {
-            startActivity(Intent(this,MainActivity2::class.java))
-
         }
     }
 }
